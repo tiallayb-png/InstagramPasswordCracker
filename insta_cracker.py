@@ -12,8 +12,8 @@ def logInSuccess(browser):
 
 correctPassword = None
 account_username = sys.argv[1]
-with Browser('firefox', headless=True) as browser:
-    browser.visit('https://www.instagram.com')
+with Browser('chrome', headless=True) as browser:
+    browser.visit('https://www.instagram.com/6luu3/?utm_source=ig_web_button_share_sheet')
     browser.find_by_text("Log in").first.click()
     username_form = browser.find_by_name('username').first
     password_form = browser.find_by_name('password').first
